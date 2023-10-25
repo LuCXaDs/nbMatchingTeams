@@ -128,32 +128,21 @@ void checkTeamBudget(List<int> id, int budget, int team) {
 }
 
 void findTeam(List<int> id) {
-  // Initialisation de la liste des combinaisons
   List<List<int>> listeCombinaisons = [];
-
-  // Ajout du premier ensemble d'indices à la liste des combinaisons
   listeCombinaisons.add(List.from(id));
-
-  int i = team - 1; // On commence à incrémenter le dernier indice de la liste
-
+  int i = team - 1;
   while (i != -1) {
-    id[i] += 1; // On incrémente l'indice actuel
-
+    id[i] += 1;
     for (int j = i + 1; j < team; j++) {
-      // On recale les indices des éléments suivants par rapport à l'indice incrémente
       id[j] = id[j - 1] + 1;
     }
-
     if (id[i] == (maxUsers - team + i)) {
-      // Si l'indice actuel a atteint sa valeur maximale, on repère l'indice précédent
       i -= 1;
     } else {
-      // Sinon, on repère le dernier indice
       i = team - 1;
     }
     checkTeamBudget(List.from(id), budget, team);
   }
-
 }
 
 void main(List<String> arg) async {
