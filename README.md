@@ -1,4 +1,4 @@
-# AlgoNbMatchingTeams
+# NbMatchingTeams
 L'objectif de cet exercice est d'écrire un programme capable de déterminer le nombre d'équipes de freelancers qui peuvent être constituées en fonction de la taille d'équipe et du budget donnés en paramètre.
 
 <center>
