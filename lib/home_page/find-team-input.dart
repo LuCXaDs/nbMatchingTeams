@@ -40,11 +40,11 @@ class _FindTeamInputState extends State<FindTeamInput> {
             color: Colors.white,
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.15), // Couleur de l'ombre
+                color: Colors.black.withOpacity(0.15),
                 offset: const Offset(
-                    0, 5), // Décalage horizontal et vertical de l'ombre
-                blurRadius: 5, // Rayon du flou de l'ombre
-                spreadRadius: 3, // Optionnel : étend l'ombre (dilatation)
+                    0, 5),
+                blurRadius: 5,
+                spreadRadius: 3,
               ),
             ],
           ),

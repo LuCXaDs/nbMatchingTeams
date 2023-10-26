@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nb_matching_teams/algo/freelancers.dart';
-// import 'package:flutter_isolate/flutter_isolate.dart';
-// import 'dart:isolate';
 
 Map<int, FreelancersId> freelancersId = {};
 Map<int, Team> teamFind = {};
@@ -170,18 +168,5 @@ Future<void> startAlgo(List<String> arg, BuildContext context) async {
     id.add(i);
   }
 
-  // FlutterIsolate.spawn(findTeam, id);
-
   findTeam(id);
-
-  // print("Result : $nbTeamFind");
-  // for (var key in teamFind.keys) {
-  //   List<int> id = [];
-  //   id = teamFind[key]!.id;
-  //   print(teamFind[key]?.id);
-  //   for (var nb in id) {
-  //     print(freelancersId[nb]?.name);
-  //     print(freelancersId[nb]?.budget);
-  //   }
-  // }
 }

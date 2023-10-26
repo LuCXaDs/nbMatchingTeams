@@ -19,7 +19,7 @@ class _SideBarState extends State<SideBar> {
   Widget build(BuildContext context) {
     return FractionallySizedBox(
       alignment: Alignment.centerLeft,
-      heightFactor: 0.8, // 70 % de la hauteur de l'écran (de 20 % à 90 %)
+      heightFactor: 0.8,
       child: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -60,18 +60,16 @@ class Freelancers extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.3), // Couleur de l'ombre
-              offset: const Offset(
-                  0, 5), // Décalage horizontal et vertical de l'ombre
-              blurRadius: 5, // Rayon du flou de l'ombre
-              spreadRadius: 3, // Optionnel : étend l'ombre (dilatation)
+              color: Colors.black.withOpacity(0.3),
+              offset: const Offset(0, 5),
+              blurRadius: 5,
+              spreadRadius: 3,
             ),
           ],
         ),
         width: 200,
         height: 60,
-        margin:
-            const EdgeInsets.all(10.0), // Ajustez le padding selon vos besoins
+        margin: const EdgeInsets.all(10.0),
         child: Row(
           children: [
             Container(
@@ -83,7 +81,7 @@ class Freelancers extends StatelessWidget {
               width: 50,
               height: 50,
               child: Image.network(
-                "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-3-avatar-2754579_120516.png",
+                "https://cdn.icon-icons.com/icons2/1736/PNG/512/4043272-avatar-lazybones-sloth-sluggard_113274.png",
                 width: 50,
                 height: 50,
               ),
