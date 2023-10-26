@@ -27,9 +27,11 @@ docker compose -f docker-compose.yml up -d
 Rendez-vous sur http://localhost:1200/
 
 ## Supprimer le Container et l'image
+Dans un premier temps, cela va arrêter le conteneur en cours, puis le supprimer, ainsi que le réseau associé.
 ```
 docker compose -f docker-compose.yml down
 ```
+Suppression de l'image
 ```
 docker rmi nb-matching-teams
 ```
