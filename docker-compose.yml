@@ -3,9 +3,9 @@ version: "3.8"
 services:
  
   nbMatchingTeams:
-    container_name: nbMatchingTeams
-    image: nbMatchingTeams
-    build: Dockerfile
+    container_name: nb-matching-teams
+    image: nb-matching-teams
+    build: .
     restart: always
     ports:
       - 1200:80
