@@ -28,14 +28,9 @@ COPY . $APP
 # Setup a new folder as the working directory
 WORKDIR $APP
 
-# Installez une version compatible du Dart SDK
-# RUN flutter --version
-# RUN flutter --no-version-check upgrade
-
-
 # Run build: 1 - clean, 2 - pub get, 3 - build web
 RUN flutter clean
-RUN flutter pub get  # Change this line to run as a non-root user
+RUN flutter pub get
 RUN flutter build web
 
 # Once here, the app will be compiled and ready to deploy
