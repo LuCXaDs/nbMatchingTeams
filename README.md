@@ -19,7 +19,7 @@ docker compose -f docker-compose.yml build
 ```
 
 ## Après la réussite de la construction de l'image
-Exécutez l'image Docker en utilisant le port localhost 1200. Vous pouvez le changer en un autre port en le remplaçant.
+Exécutez l'image Docker sur le port de base, qui est 1200. Vous pouvez le modifier dans le docker-compose.
 ```
 docker compose -f docker-compose.yml up -d
 ```
