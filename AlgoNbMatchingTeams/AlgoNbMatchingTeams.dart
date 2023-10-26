@@ -71,7 +71,7 @@ bool checkArg(List<String> arg) {
       value1 = int.parse(arg[0]);
       value2 = int.parse(arg[1]);
 
-      if (value1 >= 1 && value1 <= 100 && value2 >= 100 && value2 <= 10000) {
+      if (value1 >= 1 && value1 <= 4 && value2 >= 100 && value2 <= 10000) {
         return true;
       } else {
         print("arg[0] or arg[1] is outside the specified ranges.");
