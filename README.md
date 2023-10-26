@@ -9,7 +9,7 @@ L'objectif de cet exercice est d'écrire un programme capable de déterminer le 
 Pour executer l'agorithme sans passer par flutter <a href="https://github.com/LuCXaDs/nbMatchingTeams/tree/main/AlgoNbMatchingTeams">cliquer ici<a/>
 
 
-# Exécuter avec Flutter et Docker
+# Exécuter flutter dans docker
 ## Prérequis
 Vous devez avoir installer Docker ! <a href="https://docs.docker.com/engine/install/">Voir la Docs</a>
 ## Construction de l'image Docker
