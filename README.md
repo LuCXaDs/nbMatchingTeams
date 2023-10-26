@@ -1,9 +1,13 @@
 # AlgoNbMatchingTeams
 L'objectif de cet exercice est d'écrire un programme capable de déterminer le nombre d'équipes de freelancers qui peuvent être constituées en fonction de la taille d'équipe et du budget donnés en paramètre.
 
+
 # Exécuter directement dans un prompt
 Pour executer l'agorithme sans passer par flutter <a href="https://github.com/LuCXaDs/nbMatchingTeams/tree/main/AlgoNbMatchingTeams">cliquer ici<a/>
+
+
 # Exécuter avec Flutter et Docker
+
 ## Construction de l'image Docker
 Utilisez docker pour construire l'image du conteneur.
 ```
