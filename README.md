@@ -10,7 +10,7 @@ Pour executer l'agorithme sans passer par flutter <a href="https://github.com/Lu
 
 
 # Exécuter avec Flutter et Docker
-## awdaw
+## Prérequis
 Vous devez avoir installer Docker ! <a href="https://docs.docker.com/engine/install/">Voir la Docs</a>
 ## Construction de l'image Docker
 Utilisez docker pour construire l'image du conteneur.
