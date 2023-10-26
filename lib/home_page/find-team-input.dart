@@ -78,7 +78,7 @@ class _FindTeamInputState extends State<FindTeamInput> {
                           });
                         },
                         decoration: InputDecoration(
-                          labelText: 'Nombres de personnes dans chaque groupes',
+                          labelText: 'Number of people in each group',
                           hintText: '1 - 4',
                           errorText: errorInput ? 'Input is wrong' : null,
                         ),
@@ -91,7 +91,7 @@ class _FindTeamInputState extends State<FindTeamInput> {
                           });
                         },
                         decoration: InputDecoration(
-                          labelText: "budget de l'equipe",
+                          labelText: "Team budget",
                           hintText: '100 - 10000',
                           errorText: errorInput ? 'Input is wrong' : null,
                         ),
@@ -114,7 +114,7 @@ class _FindTeamInputState extends State<FindTeamInput> {
                       controllerTeamSize.clear();
                     },
                     child: const Center(
-                      child: Text("Valide"),
+                      child: Text("Submit"),
                     ),
                   ),
                 ),
@@ -155,4 +155,3 @@ void waitingAlgo(BuildContext context) async {
         );
       });
 }
-

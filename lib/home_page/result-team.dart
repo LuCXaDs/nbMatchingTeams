@@ -64,10 +64,7 @@ class ResultTeam extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 children: [
                   for (var person in teamFind.keys)
-                    Container(
-                      color: person % 2 != 0 ? Colors.white : Colors.white24,
-                      child: ResultSlider(person: person),
-                    )
+                    ResultSlider(person: person),
                 ],
               ),
             )
@@ -95,9 +92,11 @@ class ResultSlider extends StatelessWidget {
             )
         ],
         options: CarouselOptions(
-          height: 80,
-          viewportFraction: 0.7,
-          enableInfiniteScroll: team != 1 ? true : false,
+          height: 100,
+          viewportFraction: 0.6,
+          // enableInfiniteScroll: team > 2 ? true : false,
+          enableInfiniteScroll: false,
+          enlargeCenterPage: true,
         ),
       ),
     );
