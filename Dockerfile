@@ -1,46 +1,56 @@
 # Environemnt to install flutter and build web
 FROM debian:latest AS build-env
 
-# install all needed stuff
+# Install all needed stuff
 RUN apt-get update
 RUN apt-get install -y curl git unzip
 
-# define variables
+# Define variables
 ARG FLUTTER_SDK=/usr/local/flutter
 ARG APP=/app/
 
-#clone flutter
+# Clone Flutter
 RUN git clone https://github.com/flutter/flutter.git $FLUTTER_SDK
-# change dir to current flutter folder and make a checkout to the specific version
+# Change directory to the current Flutter folder and make a checkout to the specific version
 RUN cd $FLUTTER_SDK && git checkout efbf63d9c66b9f6ec30e9ad4611189aa80003d31
 
-# setup the flutter path as an enviromental variable
+# Setup the Flutter path as an environmental variable
 ENV PATH="$FLUTTER_SDK/bin:$FLUTTER_SDK/bin/cache/dart-sdk/bin:${PATH}"
 
 # Start to run Flutter commands
-# doctor to see if all was installes ok
+# Doctor to see if all was installed OK
 RUN flutter doctor -v
 
-# create folder to copy source code
+# Create a folder to copy source code
 RUN mkdir $APP
-# copy source code to folder
+# Copy source code to the folder
 COPY . $APP
-# stup new folder as the working directory
+# Setup a new folder as the working directory
 WORKDIR $APP
+
+# Installez une version compatible du Dart SDK
+# RUN flutter --version
+# RUN flutter --no-version-check upgrade
+
 
 # Run build: 1 - clean, 2 - pub get, 3 - build web
 RUN flutter clean
-RUN flutter pub get
+RUN flutter pub get  # Change this line to run as a non-root user
 RUN flutter build web
 
-# once heare the app will be compiled and ready to deploy
+# Once here, the app will be compiled and ready to deploy
 
-# use nginx to deploy
+# Use Nginx to deploy
 FROM nginx:1.25.2-alpine
 
-# copy the info of the builded web app to nginx
+# Copy the info of the built web app to Nginx
 COPY --from=build-env /app/build/web /usr/share/nginx/html
 
-# Expose and run nginx
+# Expose and run Nginx
 EXPOSE 80
+
+# Specify a non-root user to run the following command
+USER $NON_ROOT_USER
+
+# Command to run your application (e.g., your server or web app)
 CMD ["nginx", "-g", "daemon off;"]
