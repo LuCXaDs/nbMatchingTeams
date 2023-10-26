@@ -1,5 +1,5 @@
 
-![image](https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/c5aa4533-71d9-4127-8d65-7e471a42164c)
+![image](https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/c5aa4533-71d9-4127-8d65-7e471a42164c){width=300}{height=400}
 
 
 ![image](https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/2dba78f0-6cd3-480e-811d-adb96055997a)
