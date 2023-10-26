@@ -83,21 +83,24 @@ class ResultSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 20, bottom: 20),
-      child: CarouselSlider(
-        items: [
-          for (var nb in teamFind[person]!.id)
-            SizedBox(
-              width: 300,
-              child: Freelancers(person: nb),
-            )
+      child: Stack(
+        children: [
+          CarouselSlider(
+            items: [
+              for (var nb in teamFind[person]!.id)
+                SizedBox(
+                  width: 300,
+                  child: Freelancers(person: nb),
+                )
+            ],
+            options: CarouselOptions(
+              height: 100,
+              viewportFraction: 0.6,
+              enableInfiniteScroll: false,
+              enlargeCenterPage: true,
+            ),
+          ),
         ],
-        options: CarouselOptions(
-          height: 100,
-          viewportFraction: 0.6,
-          // enableInfiniteScroll: team > 2 ? true : false,
-          enableInfiniteScroll: false,
-          enlargeCenterPage: true,
-        ),
       ),
     );
   }

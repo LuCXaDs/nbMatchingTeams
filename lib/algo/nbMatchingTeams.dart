@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nb_matching_teams/algo/freelancers.dart';
-import 'package:flutter_isolate/flutter_isolate.dart';
+// import 'package:flutter_isolate/flutter_isolate.dart';
 // import 'dart:isolate';
 
 Map<int, FreelancersId> freelancersId = {};

@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 class ButtonRedirection extends StatelessWidget {
   ButtonRedirection({super.key});
 
-  final Uri github = Uri(scheme: 'https', host: 'github.com', path: 'lucxads');
+  final Uri github =
+      Uri(scheme: 'https', host: 'github.com', path: 'LuCXaDs/nbMatchingTeams');
 
   @override
   Widget build(BuildContext context) {
