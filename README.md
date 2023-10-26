@@ -29,9 +29,9 @@ Rendez-vous sur http://localhost:1200/"
 
 # Images du Site
 
-<img src="https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/c5aa4533-71d9-4127-8d65-7e471a42164c" width="500" height="600" />
+<img src="https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/c5aa4533-71d9-4127-8d65-7e471a42164c" width="400" height="500" />
 
-<img src="https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/2dba78f0-6cd3-480e-811d-adb96055997a" width="500" height="600" />
+<img src="https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/2dba78f0-6cd3-480e-811d-adb96055997a" width="400" height="500" />
 
 <img src="https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/79a48eb6-011f-4e7b-92e5-dd2e190eb975" width="500" height="600" />
 
