@@ -28,7 +28,7 @@ Exécutez l'image Docker en utilisant le port localhost 1200. Vous pouvez le cha
 docker run -d -p 1200:80 --name matching nb-matching-teams
 ```
 
-Rendez-vous sur http://localhost:1200/"
+Rendez-vous sur http://localhost:1200/
 
 
 
