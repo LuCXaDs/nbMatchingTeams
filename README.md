@@ -29,9 +29,8 @@ Rendez-vous sur http://localhost:1200/
 ## Supprimer le Container et l'image
 ```
 docker compose -f docker-compose.yml down
-
-docker rm nb-matching-teams
-
+```
+```
 docker rmi nb-matching-teams
 ```
 
