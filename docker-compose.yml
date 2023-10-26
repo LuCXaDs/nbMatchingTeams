@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+ 
+  nbMatchingTeams:
+    container_name: nbMatchingTeams
+    image: nbMatchingTeams
+    build: Dockerfile
+    restart: always
+    ports:
+      - 1200:80
