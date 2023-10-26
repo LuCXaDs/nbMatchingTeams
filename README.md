@@ -15,21 +15,23 @@ Vous devez avoir installer Docker ! <a href="https://docs.docker.com/engine/inst
 ## Construction de l'image Docker
 Utilisez docker pour construire l'image du conteneur.
 ```
-docker build -t nb-matching-teams .
-```
-Si vous rencontrez des problèmes avec le cache, vous pouvez le nettoyer en utilisant la commande suivante.
-```
-docker build --no-cache -t nb-matching-teams .
+docker compose -f docker-compose.yml build
 ```
 
 ## Après la réussite de la construction de l'image
 Exécutez l'image Docker en utilisant le port localhost 1200. Vous pouvez le changer en un autre port en le remplaçant.
 ```
-docker run -d -p 1200:80 --name matching nb-matching-teams
+docker compose -f docker-compose.yml up -d
 ```
 
 Rendez-vous sur http://localhost:1200/
 
+## Supprimer le Container et l'image
+```
+docker compose -f docker-compose.yml down\
+docker rm nb-matching-teams\
+docker rmi nb-matching-teams
+```
 
 
 # Images du Site
