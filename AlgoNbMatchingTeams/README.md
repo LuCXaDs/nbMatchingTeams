@@ -59,4 +59,4 @@ il y aurait une personne ayant le même nom deux fois.
 
 ## Remarque
 N'oubliez pas de vous rendre dans le dossier "AlgoNbMatchingTeams".
-Il se peut que le programme prenne du temps pour calculer, maximum 30 secondes pour trouver 5123 résultats.
+Il se peut que le programme prenne du temps pour calculer, maximum 10 secondes pour trouver 5123 résultats.
