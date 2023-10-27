@@ -35,7 +35,8 @@ Suppression de l'image
 ```
 docker rmi nb-matching-teams
 ```
-
+## Remarques
+Si, après avoir supprimé correctement l'application ci-dessus, vous pouvez toujours accéder au site lorsque vous utilisez le navigateur "Brave", c'est parce que le code est compilé en JavaScript et que Brave le conserve dans son cache. De ce fait, il semble que votre application tourne en continu, mais si vous videz le cache, vous n'aurez normalement plus de soucis lorsque vous accéderez à "http://localhost:1200/". :)
 
 # Images du Site
 
