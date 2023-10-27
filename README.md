@@ -38,6 +38,9 @@ docker rmi nb-matching-teams
 ## Remarques
 Si, après avoir supprimé correctement l'application comme ci-dessus et que vous pouvez toujours accéder au site lorsque vous utilisez le navigateur "Brave", c'est parce que le code est compilé en JavaScript et que Brave le conserve dans son cache. De ce fait, il semble que votre application tourne en continu, mais si vous videz le cache, vous n'aurez normalement plus de soucis lorsque vous accéderez à "http://localhost:1200/". :)
 
+![image](https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/69e89e27-f9c4-440c-89e3-6ca184a94a94)
+
+
 # Images du Site
 
 <img src="https://github.com/LuCXaDs/nbMatchingTeams/assets/69203865/81458f01-483e-4bd4-b676-eb88ff7a3865" width="410" height="490" />
