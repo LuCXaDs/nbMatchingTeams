@@ -49,7 +49,3 @@ USER $NON_ROOT_USER
 
 # Command to run your application (e.g., your server or web app)
 CMD ["nginx", "-g", "daemon off;"]
-
-RUN echo "Exécutez l'image Docker avec la commande :"
-RUN echo "docker run -d -p 1200:80 --name matching nb-matching-teams"
-RUN echo "Une fois la commande ci-dessus lancée, veuillez cliquer sur le lien : http://localhost:1200/"
