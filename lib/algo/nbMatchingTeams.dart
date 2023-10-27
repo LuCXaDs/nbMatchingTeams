@@ -60,8 +60,6 @@ Future<void> readJsonFile() async {
 }
 
 bool checkArg(List<String> arg) {
-  print(arg[0]);
-  print(arg[1]);
   if (arg.length == 2) {
     int value1 = 0;
     int value2 = 0;
