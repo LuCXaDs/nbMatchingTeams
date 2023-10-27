@@ -169,8 +169,7 @@ void main(List<String> arg) async {
     id = teamFind[key]!.id;
     print(teamFind[key]?.id);
     for (var nb in id) {
-      print(freelancersId[nb]?.name);
-      print(freelancersId[nb]?.budget);
+      print("${freelancersId[nb]?.name} : ${freelancersId[nb]?.budget}");
     }
   }
 }
