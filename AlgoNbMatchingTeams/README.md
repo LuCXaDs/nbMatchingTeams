@@ -19,14 +19,11 @@ dart .\AlgoNbMatchingTeams.dart 1 560
 ```
 Result : 3
 [15]
-Anne
-560
+Anne : 560
 [104]
-Luc-André
-560
+Luc-André : 560
 [130]
-Pierre-Gabriel
-560
+Pierre-Gabriel : 560
 ```
 
 2ème exemple
@@ -36,23 +33,17 @@ dart .\AlgoNbMatchingTeams.dart 2 390
 ```
 Result : 2
 [108, 127]
-Marie
-205
-Philippe-Émile
-185
+Marie : 205
+Philippe-Émile : 185
 [127, 133]
-Philippe-Émile
-185
-Pulchérie
-205
+Philippe-Émile : 185
+Pulchérie : 205
 ```
 Le tableau que vous voyez dans le prompt correspond aux ID des personnes :
 ```
 [108, 127] ----> Id de Marie est 108 et de Philippe-Émile est 127.
-Marie
-205
-Philippe-Émile
-185
+Marie : 205
+Philippe-Émile : 185
 ```
 Cela est simplement fait pour mieux traiter les informations, mais aussi au cas où,
 il y aurait une personne ayant le même nom deux fois.
